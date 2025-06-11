@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merkurius - Soyuz</title>
+    <link rel="icon" href="../img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/planet.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="../img/logo.png" alt="Soyuz Logo" class="logo" />
+          <span>Soyuz </span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <button class="back-btn" onclick="">← Kembali</button>
+          </li>
+          <li class="dropdown">
+            <button class="dropdown-btn">Jelajahi Planet Lain ▼</button>
+            <div class="dropdown-content">
+              <a href="venus.html">Venus</a>
+              <a href="bumi.html">Bumi</a>
+              <a href="mars.html">Mars</a>
+              <a href="jupiter.html">Jupiter</a>
+              <a href="saturnus.html">Saturnus</a>
+              <a href="uranus.html">Uranus</a>
+              <a href="neptunus.html">Neptunus</a>
+            </div>
+          </li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Planet Hero Section -->
+    <section class="planet-hero">
+      <div class="planet-hero-content">
+        <div class="planet-info-main">
+          <h1>Merkurius</h1>
+          <h2>Planet yang Gesit</h2>
+          <p>
+            Merkurius adalah planet paling kecil di tata surya kita dan juga
+            yang paling deket sama Matahari.
+          </p>
+        </div>
+        <div class="planet-image-main">
+          <img
+            src="../img/merkurius.png"
+            alt="Merkurius"
+            class="planet-main-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Planet Details Section -->
+    <section class="planet-details">
+      <div class="container">
+        <h2>Fakta Menarik Tentang Merkurius</h2>
+        <div class="facts-grid">
+          <div class="fact-card">
+            <div class="fact-icon">⏱️</div>
+            <h3>Hari yang Ekstrem</h3>
+            <p>
+              Di Merkurius, satu hari terasa super lama, setara dengan 59 hari
+              di Bumi ! Nggak heran kalau planet ini termasuk yang paling lambat
+              berputar.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🌡️</div>
+            <h3>Temperature Extremes</h3>
+            <p>
+              Suhu permukaan Merkurius bisa sangat dingin dari -290°F sampai
+              800°F karena hampir tak ada atmosfer.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🏃‍♂️</div>
+            <h3>Orbit Cepat</h3>
+            <p>
+              Merkurius menyelesaikan satu putaran mengelilingi Matahari hanya
+              dalam 88 hari Bumi.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🪨</div>
+            <h3>Init Padat</h3>
+            <p>
+              Merkurius tuh planet kedua paling padet setelah Bumi, soalnya
+              punya inti besi yang gede banget !
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">💨</div>
+            <h3>Atmosfer tipis</h3>
+            <p>
+              Merkurius hanya punya eksosfer yang sangat tipis, makanya nggak
+              bisa nahan panas.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🌑</div>
+            <h3>Tanpa Bulan</h3>
+            <p>
+              Merkurius tidak memiliki satelit alami atau bulan yang muter-muter
+              di sekitarnya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exploration Section -->
+    <section class="exploration">
+      <div class="container">
+        <h2>Riwayat Penjelajahan</h2>
+        <div class="exploration-content">
+          <div class="exploration-text">
+            <h3>Misi ke Merkurius</h3>
+            <p>
+              Merkurius baru pernah dikunjungi oleh dua wahana antariksa:
+              Mariner 10 dan MESSENGER. Kedua misi ini memberikan banyak wawasan
+              berharga tentang planet misterius yang paling dekat dengan
+              Matahari ini.
+            </p>
+
+            <h3>Misi Mendatang</h3>
+            <p>
+              Misi BepiColombo dari Badan Antariksa Eropa (ESA) sedang dalam
+              perjalanan menuju Merkurius. Misi ini akan memberikan informasi
+              yang lebih rinci tentang planet menarik ini.
+            </p>
+          </div>
+          <div class="exploration-image">
+            <img src="" alt="Mercury Exploration" class="exploration-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back Modal -->
+    <div id="backModal" class="modal">
+      <div class="modal-content">
+        <h3>Kembali ke beranda</h3>
+        <p>Kamu yakin ingin kembali ke beranda?</p>
+        <div class="modal-buttons">
+          <button class="modal-btn btn-yes" onclick="">Ya</button>
+          <button class="modal-btn btn-cancel" onclick="">Batal</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Soyuz. Ikutan jelajahi luar angkasa bareng kami !</p>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/planet.js"></script>
+  </body>
+</html>
