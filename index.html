@@ -1,11 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soyuz Explore - Jelajahi Luar Angkasa!</title>
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="" alt="Soyuz Logo" class="logo" />
+          <span>Soyuz Explore</span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link">Beranda</a></li>
+          <li><a href="#about" class="nav-link">Tentang</a></li>
+          <li><a href="#planets" class="nav-link">Eksplorasi</a></li>
+          <li><a href="#contact" class="nav-link">Kontak</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Beranda -->
+    <section id="home" class="hero">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="hero-content">
+        <header class="hero-text">
+          <h1>
+            Jelajahi Luar Angkasa dengan
+            <span class="highlight">Soyuz Eksplore</span>
+          </h1>
+          <p>
+            Memulai perjalanan luar biasa melintasi luar angkasa dan temukan
+            keajaiban dari tata surya.
+          </p>
+          <button class="cta-button" onclick="">AYO BERANGKAT!</button>
+        </header>
+
+        <figure class="hero-image">
+          <img
+            src=""
+            alt="icon roket"
+            class="rocket-img"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <!-- Tentang -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>Kenali Soyuz Lebih Dekat</h2>
+        <article class="about-content">
+          <div class="about-text">
+            <h3>Misi Soyuz Explore</h3>
+            <p>
+              Soyuz Explor hadir buat kamu yang pengen jelajahi luar angkasa
+              tanpa harus naik roket. Lewat platform interaktif kami, serunya
+              alam semesta bisa kamu rasain langsung dari layar kamu.
+            </p>
+
+            <h3>Motivasi Soyuz Explore</h3>
+            <p>
+              Soyuz Explore terinspirasi dari pesawat luar angkasa legendaris Soyuz buatan Rusia. Platform kami mencerminkan semangat petualangan luar angkasa sekaligus menyambut masa depan dunia digital. Selama lebih dari 50 tahun, Soyuz telah menjadi pintu masuk paling keren dan andal untuk menjelajahi luar angkasa.
+            </p>
+
+            <h3>Apa aja sih yang bisa kamu dapetin disini?</h3>
+            <p>
+              Kamu bisa kepoin info seru tentang planet-planet yang ada tata
+              surya, cari tahu keunikan dari tiap planet, dan nemuin hal-hal
+              gokil yang bikin setiap planet itu beda dan keren banget di jagat
+              raya ini !
+            </p>
+          </div>
+          <figure class="about-image">
+            <img
+              src="img/soyuz-rocket.jpg"
+              alt="Ilustrasi Roket Soyuz"
+              class="about-img"
+            />
+            <figcaption class="visually-hidden">Ilustrasi Roket Soyuz</figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <!-- Planet -->
+    <section id="planets" class="planets">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="container">
+        <h2>Mau Mendarat di Mana Nih?</h2>
+        <p class="section-subtitle">Pilih planet yang ingin kamu jelajahi</p>
+        <div class="planets-grid">
+          <div class="planet-card" data-planet="merkurius">
+            <div class="planet-image">
+              <img src="" alt="Merkurius" class="planet-img" />
+            </div>
+            <div class="planet-info">
+              <h3>Merkurius</h3>
+              <p>
+                Planet terdekat dari Matahari yang punya suhu super ekstrem.
+              </p>
+              <button class="explore-btn" onclick="">Jelajahi !</button>
+            </div>
+          </div>
+
+          <div class="planet-card" data-planet="venus">
+            <div class="planet-image">
+              <img src="" alt="Venus" class="planet-img" />
+            </div>
+            <div class="planet-info">
+              <h3>Venus</h3>
+              <p>
+                Planet paling panas dengan atmosfer super tebal dan beracun
+                banget
+              </p>
+              <button class="explore-btn" onclick="">Jelajahi !</button>
+            </div>
+          </div>
+
+          <div class="planet-card" data-planet="bumi">
+            <div class="planet-image">
+              <img src="img/bumi.png" alt="Bumi" class="planet-img" />
+            </div>
+            <div class="planet-info">
+              <h3>Bumi</h3>
+              <p>Planet tempat tinggal semua makhluk hidup yang kita kenal.</p>
+              <button class="explore-btn" onclick="">Jelajahi !</button>
+            </div>
+          </div>
+
+          <div class="planet-card" data-planet="mars">
+            <div class="planet-image">
+              <img src="" alt="Mars" class="planet-img" />
+            </div>
+            <div class="planet-info">
+              <h3>Mars</h3>
+              <p>
+                Planet merah yang punya peluang buat jadi tempat tinggal di masa
+                depan.
+              </p>
+              <button class="explore-btn" onclick="">Jelajahi !</button>
+            </div>
+          </div>
+
+          <div class="planet-card" data-planet="jupiter">
+            <div class="planet-image">
+              <img src="" alt="Jupiter" class="planet-img" />
+            </div>
+            <div class="planet-info">
+              <h3>Jupiter</h3>
+              <p>
+                Planet terbesar dengan badai legendaris bernama Great Red Spot.
+              </p>
+              <button class="explore-btn" onclick="">Jelajahi !</button>
+            </div>
+          </div>
+
+          <div class="planet-card" data-planet="saturnus">
+            <div class="planet-image">
+              <img src="" alt="Saturnus" class="planet-img" />
+            </div>
+            <div class="planet-info">
+              <h3>Saturnus</h3>
+              <p>
+                Planet bercincin dengan cincin es dan batuan yang keren banget.
+              </p>
+              <button class="explore-btn" onclick="('saturnus')">
+                Jelajahi !
+              </button>
+            </div>
+          </div>
+
+          <div class="planet-card" data-planet="uranus">
+            <div class="planet-image">
+              <img src="" alt="Uranus" class="planet-img" />
+            </div>
+            <div class="planet-info">
+              <h3>Uranus</h3>
+              <p>
+                Sang raksasa es yang miring dengan putaran unik yang beda dari
+                planet lain.
+              </p>
+              <button class="explore-btn" onclick="">Jelajahi !</button>
+            </div>
+          </div>
+
+          <div class="planet-card" data-planet="neptunus">
+            <div class="planet-image">
+              <img src="" alt="Neptunus" class="planet-img" />
+            </div>
+            <div class="planet-info">
+              <h3>Neptunus</h3>
+              <p>
+                Planet dengan angin super kencang sampai melebihi kecepatan
+                suara.
+              </p>
+              <button class="explore-btn" onclick="">Jelajahi !</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Tim di Balik Layar !</h2>
+        <div class="developers">
+          <div class="developer-card">
+            <div class="developer-image">
+              <img
+                src=""
+                alt="Reyqal"
+                class="developer-img"
+              />
+            </div>
+            <div class="developer-info">
+              <h3>Reyqal</h3>
+              <p>Gelar</p>
+              <p>Kata-kata hari ini</p>
+              <div class="social-links">
+                <a href="https://github.com/Reyqal" target="_blank" class="social-link">GitHub</a>
+                <a href="https://www.instagram.com/reyqalsew/" target="_blank" class="social-link">Instagram</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="developer-card">
+            <div class="developer-image">
+              <img
+                src=""
+                alt="Syalwa"
+                class="developer-img"
+              />
+            </div>
+            <div class="developer-info">
+              <h3>Syalwa</h3>
+              <p>Gelar</p>
+              <p>Kata-kata hari ini</p>
+              <div class="social-links">
+                <a href="https://github.com/sylwalya" target="_blank" class="social-link"> GitHub</a>
+                <a href="https://www.instagram.com/sylwalya/" target="_blank" class="social-link">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Soyuz. Ikutan jelajahi luar angkasa bareng kami !</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
