@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venus - Soyuz</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/planet.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar planet-navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="../img/logo.png" alt="Soyuz Logo" class="logo" />
+          <span>Soyuz</span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <button class="back-btn" onclick="">← Kembali</button>
+          </li>
+          <li class="dropdown">
+            <button class="dropdown-btn">Jelajahi Planet Lain ▼</button>
+            <div class="dropdown-content">
+              <a href="merkurius.html">Merkurius</a>
+              <a href="bumi.html">Bumi</a>
+              <a href="mars.html">Mars</a>
+              <a href="jupiter.html">Jupiter</a>
+              <a href="saturnus.html">Saturnus</a>
+              <a href="uranus.html">Uranus</a>
+              <a href="neptunus.html">Neptunus</a>
+            </div>
+          </li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Planet Hero Section -->
+    <section class="planet-hero">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="planet-hero-content">
+        <div class="planet-info-main">
+          <h1>Venus</h1>
+          <h2>Planet Terpanas</h2>
+          <p>
+            Venus adalah planet terpanas di tata surya karena atmosfernya penuh
+            karbon dioksida dan awan asam sulfat yang beracun.
+          </p>
+        </div>
+        <div class="planet-image-main">
+          <img src="../img/venus.png" alt="Venus" class="planet-main-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Planet Details Section -->
+    <section class="planet-details">
+      <div class="container">
+        <h2>Fakta Menarik Tentang Venus</h2>
+        <div class="facts-grid">
+          <div class="fact-card">
+            <div class="fact-icon">🔄</div>
+            <h3>Rotasi Terbalik</h3>
+            <p>
+              Venus berputar ke arah yang berlawanan dari kebanyakan planet, dan
+              satu harinya lebih panjang daripada satu tahunnya.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🔥</div>
+            <h3>Panas Ekstrem</h3>
+            <p>
+              Suhu di permukaan Venus bisa nyampe 900°F (475°C), panasnya parah
+              banget sampe bisa melelehin timbal gara-gara efek rumah kaca yang
+              super kuat.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">☁️</div>
+            <h3>Atmosfer Beracun</h3>
+            <p>
+              Venus tuh punya atmosfer tebel banget, kebanyakan isinya karbon
+              dioksida, terus ada awan asam sulfat yang pekat parah.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">👭</div>
+            <h3>Kembaran Bumi</h3>
+            <p>
+              Venus tuh sering banget dibilang “kembaran Bumi” soalnya ukurannya
+              mirip, tapi suasananya jauh beda banget, guys !
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">💨</div>
+            <h3>Tekanan yang Sangat Tinggi</h3>
+            <p>
+              Tekanan atmosfer di Venus tuh gila banget, 90 kali lebih gede dari
+              Bumi. Kayak lo lagi tenggelam jauh di dasar laut.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">⭐</div>
+            <h3>Planet Terang</h3>
+            <p>
+              Venus tuh planet paling terang di langit, sampai sering disangka
+              bintang.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exploration Section -->
+    <section class="exploration">
+      <div class="container">
+        <h2>Riwayat Penjelajahan</h2>
+        <div class="exploration-content">
+          <div class="exploration-text">
+            <h3>Program Venera Uni Soviet</h3>
+            <p>
+              Program Venera dari Uni Soviet berhasil banyak hal pertama di
+              Venus, termasuk pendaratan pertama yang sukses di planet lain dan
+              foto-foto pertama dari permukaan Venus.
+            </p>
+
+            <h3>Misi Mendatang</h3>
+            <p>
+              Misi terbaru seperti Venus Express dan Akatsuki sudah mempelajari
+              atmosfer dan pola cuaca Venus, membuka wawasan baru tentang planet
+              yang penuh misteri ini.
+            </p>
+          </div>
+          <div class="exploration-image">
+            <img
+              src="../img/venus-exploration.png"
+              alt="Venus Exploration"
+              class="exploration-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back Modal -->
+    <div id="backModal" class="modal">
+      <div class="modal-content">
+        <h3>Kembali ke beranda</h3>
+        <p>Kamu yakin ingin kembali ke beranda?</p>
+        <div class="modal-buttons">
+          <button class="modal-btn btn-yes" onclick="">Ya</button>
+          <button class="modal-btn btn-cancel" onclick="">Batal</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Soyuz. Ikutan jelajahi luar angkasa bareng kami !</p>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/planet.js"></script>
+  </body>
+</html>
