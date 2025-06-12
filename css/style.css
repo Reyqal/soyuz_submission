@@ -133,7 +133,7 @@ html {
   position: relative;
 }
 
-.nav-link:hover {
+.nav-link:hover, .active {
   color: var(--text-accent);
 }
 
@@ -148,7 +148,7 @@ html {
   transition: width 0.3s ease;
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after, .active::after {
   width: 100%;
 }
 

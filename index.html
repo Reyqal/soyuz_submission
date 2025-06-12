@@ -16,7 +16,7 @@
           <span>Soyuz Explore</span>
         </div>
         <ul class="nav-menu" id="nav-menu">
-          <li><a href="#home" class="nav-link">Beranda</a></li>
+          <li><a href="#home" class="nav-link active">Beranda</a></li>
           <li><a href="#about" class="nav-link">Tentang</a></li>
           <li><a href="#planets" class="nav-link">Eksplorasi</a></li>
           <li><a href="#contact" class="nav-link">Kontak</a></li>
@@ -42,7 +42,7 @@
             Memulai perjalanan luar biasa melintasi luar angkasa dan temukan
             keajaiban dari tata surya.
           </p>
-          <button class="cta-button" onclick="">AYO BERANGKAT!</button>
+          <button class="cta-button" onclick="scrollToPlanets()">AYO BERANGKAT!</button>
         </header>
 
         <figure class="hero-image">
@@ -102,7 +102,7 @@
         <h2>Mau Mendarat di Mana Nih?</h2>
         <p class="section-subtitle">Pilih planet yang ingin kamu jelajahi</p>
         <div class="planets-grid">
-          <div class="planet-card" data-planet="merkurius">
+          <div class="planet-card">
             <div class="planet-image">
               <img src="img/merkurius.png" alt="Merkurius" class="planet-img" />
             </div>
@@ -111,11 +111,11 @@
               <p>
                 Planet terdekat dari Matahari yang punya suhu super ekstrem.
               </p>
-              <button class="explore-btn" onclick="">Jelajahi !</button>
+              <button class="explore-btn" onclick="explorePlanet('merkurius')">Jelajahi !</button>
             </div>
           </div>
 
-          <div class="planet-card" data-planet="venus">
+          <div class="planet-card">
             <div class="planet-image">
               <img src="img/venus.png" alt="Venus" class="planet-img" />
             </div>
@@ -125,22 +125,22 @@
                 Planet paling panas dengan atmosfer super tebal dan beracun
                 banget
               </p>
-              <button class="explore-btn" onclick="">Jelajahi !</button>
+              <button class="explore-btn" onclick="explorePlanet('venus')">Jelajahi !</button>
             </div>
           </div>
 
-          <div class="planet-card" data-planet="bumi">
+          <div class="planet-card">
             <div class="planet-image">
               <img src="img/bumi.png" alt="Bumi" class="planet-img" />
             </div>
             <div class="planet-info">
               <h3>Bumi</h3>
               <p>Planet tempat tinggal semua makhluk hidup yang kita kenal.</p>
-              <button class="explore-btn" onclick="">Jelajahi !</button>
+              <button class="explore-btn" onclick="explorePlanet('bumi')">Jelajahi !</button>
             </div>
           </div>
 
-          <div class="planet-card" data-planet="mars">
+          <div class="planet-card">
             <div class="planet-image">
               <img src="img/mars.png" alt="Mars" class="planet-img" />
             </div>
@@ -150,11 +150,11 @@
                 Planet merah yang punya peluang buat jadi tempat tinggal di masa
                 depan.
               </p>
-              <button class="explore-btn" onclick="">Jelajahi !</button>
+              <button class="explore-btn" onclick="explorePlanet('mars')">Jelajahi !</button>
             </div>
           </div>
 
-          <div class="planet-card" data-planet="jupiter">
+          <div class="planet-card">
             <div class="planet-image">
               <img src="img/jupiter.png" alt="Jupiter" class="planet-img" />
             </div>
@@ -163,11 +163,11 @@
               <p>
                 Planet terbesar dengan badai legendaris bernama Great Red Spot.
               </p>
-              <button class="explore-btn" onclick="">Jelajahi !</button>
+              <button class="explore-btn" onclick="explorePlanet('jupiter')">Jelajahi !</button>
             </div>
           </div>
 
-          <div class="planet-card" data-planet="saturnus">
+          <div class="planet-card">
             <div class="planet-image">
               <img src="img/saturnus.png" alt="Saturnus" class="planet-img" />
             </div>
@@ -176,11 +176,11 @@
               <p>
                 Planet bercincin dengan cincin es dan batuan yang keren banget.
               </p>
-              <button class="explore-btn" onclick="">Jelajahi !</button>
+              <button class="explore-btn" onclick="explorePlanet('saturnus')">Jelajahi !</button>
             </div>
           </div>
 
-          <div class="planet-card" data-planet="uranus">
+          <div class="planet-card">
             <div class="planet-image">
               <img src="img/uranus.png" alt="Uranus" class="planet-img" />
             </div>
@@ -190,11 +190,11 @@
                 Sang raksasa es yang miring dengan putaran unik yang beda dari
                 planet lain.
               </p>
-              <button class="explore-btn" onclick="">Jelajahi !</button>
+              <button class="explore-btn" onclick="explorePlanet('uranus')">Jelajahi !</button>
             </div>
           </div>
 
-          <div class="planet-card" data-planet="neptunus">
+          <div class="planet-card">
             <div class="planet-image">
               <img src="img/neptunus.png" alt="Neptunus" class="planet-img" />
             </div>
@@ -204,7 +204,7 @@
                 Planet dengan angin super kencang sampai melebihi kecepatan
                 suara.
               </p>
-              <button class="explore-btn" onclick="">Jelajahi !</button>
+              <button class="explore-btn" onclick="explorePlanet('neptunus')">Jelajahi !</button>
             </div>
           </div>
         </div>
