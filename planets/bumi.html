@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bumi - Soyuz</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/planet.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar planet-navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="../img/logo.png" alt="Soyuz Logo" class="logo" />
+          <span>Soyuz</span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <button class="back-btn" onclick="">← Kembali</button>
+          </li>
+          <li class="dropdown">
+            <button class="dropdown-btn">Jelajahi Planet Lain ▼</button>
+            <div class="dropdown-content">
+              <a href="merkurius.html">Merkurius</a>
+              <a href="venus.html">Venus</a>
+              <a href="mars.html">Mars</a>
+              <a href="jupiter.html">Jupiter</a>
+              <a href="saturnus.html">Saturnus</a>
+              <a href="uranus.html">Uranus</a>
+              <a href="neptunus.html">Neptunus</a>
+            </div>
+          </li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Planet Hero Section -->
+    <section class="planet-hero">
+      <div class="planet-hero-content">
+        <div class="planet-info-main">
+          <h1>Bumi</h1>
+          <h2>Planet Biru</h2>
+          <p>
+            Bumi adalah planet biru kita yang indah, satu-satunya planet yang
+            kita tahu punya kehidupan di alam semesta. Rumah kita di tengah
+            luasnya kosmos.
+          </p>
+        </div>
+        <div class="planet-image-main">
+          <img src="../img/bumi.png" alt="Bumi" class="planet-main-img" />
+        </div>
+        <div class="stars" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- Planet Details Section -->
+    <section class="planet-details">
+      <div class="container">
+        <h2>Fakta Menarik Tentang Bumi</h2>
+        <div class="facts-grid">
+          <div class="fact-card">
+            <div class="fact-icon">🌊</div>
+            <h3>Dunia Air</h3>
+            <p>
+              71% permukaan Bumi ditutupi air, makanya sering dipanggil “Planet
+              Biru”.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🌙</div>
+            <h3>Bulan yang Sempurna</h3>
+            <p>
+              Bumi cuma punya satu bulan yang setia, si Bulan, yang jaga
+              kemiringan Bumi biar stabil dan ngatur pasang surut air laut.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🧬</div>
+            <h3>Satu-satunya yang Punya Kehidupan</h3>
+            <p>
+              Bumi adalah satu-satunya planet yang kita tahu punya kehidupan,
+              dengan jutaan jenis makhluk hidup di berbagai ekosistem.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🌬️</div>
+            <h3>Atmosfer yang Sempurna</h3>
+            <p>
+              Atmosfer Bumi isinya 78% nitrogen sama 21% oksigen, cocok banget
+              buat mendukung kehidupan seperti yang kita tahu.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🕰️</div>
+            <h3>Dunia Kuno</h3>
+            <p>
+              Bumi tuh udah tua banget, sekitar 4,5 miliar tahun, dan kehidupan
+              sudah ada selama kira-kira 3,5 miliar tahun.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🛡️</div>
+            <h3>Perisai Magnetik</h3>
+            <p>
+              Medan magnet Bumi jaga kita biar aman dari radiasi panas matahari
+              dan sinar luar angkasa yang berbahaya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exploration Section -->
+    <section class="exploration">
+      <div class="container">
+        <h2>Planet Tempat Tinggal Kita</h2>
+        <div class="exploration-content">
+          <div class="exploration-text">
+            <h3>Titik Biru Pucat</h3>
+            <p>
+              Seperti kata Carl Sagan, Bumi adalah "titik biru pucat" yang
+              tergantung di sinar matahari. Dari luar angkasa, planet kita
+              terlihat seperti oase indah dan rapuh di tengah luasnya alam
+              semesta.
+            </p>
+
+            <h3>Jaga Bumi Kita</h3>
+            <p>
+              Saat kita menjelajahi dunia lain, kita semakin menghargai
+              keindahan unik Bumi, makin kerasa betapa spesialnya Bumi, dan
+              pentingnya menjaga planet rumah kita untuk generasi mendatang.
+            </p>
+          </div>
+          <div class="exploration-image">
+            <img
+              src="../img/earth-from-space.png"
+              alt="Earth from Space"
+              class="exploration-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back Modal -->
+    <div id="backModal" class="modal">
+      <div class="modal-content">
+        <h3>Kembali ke beranda</h3>
+        <p>Kamu yakin ingin kembali ke beranda?</p>
+        <div class="modal-buttons">
+          <button class="modal-btn btn-yes" onclick="">Ya</button>
+          <button class="modal-btn btn-cancel" onclick="">Batal</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Soyuz. Ikutan jelajahi luar angkasa bareng kami !</p>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/planet.js"></script>
+  </body>
+</html>
