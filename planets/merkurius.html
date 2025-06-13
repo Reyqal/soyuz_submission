@@ -18,7 +18,9 @@
         </div>
         <ul class="nav-menu" id="nav-menu">
           <li>
-            <button class="back-btn" onclick="">← Kembali</button>
+            <button class="back-btn" onclick="showBackModal()">
+              ← Kembali
+            </button>
           </li>
           <li class="dropdown">
             <button class="dropdown-btn">Jelajahi Planet Lain ▼</button>
@@ -43,6 +45,7 @@
 
     <!-- Planet Hero Section -->
     <section class="planet-hero">
+      <div class="stars" aria-hidden="true"></div>
       <div class="planet-hero-content">
         <div class="planet-info-main">
           <h1>Merkurius</h1>
@@ -154,8 +157,10 @@
         <h3>Kembali ke beranda</h3>
         <p>Kamu yakin ingin kembali ke beranda?</p>
         <div class="modal-buttons">
-          <button class="modal-btn btn-yes" onclick="">Ya</button>
-          <button class="modal-btn btn-cancel" onclick="">Batal</button>
+          <button class="modal-btn btn-yes" onclick="goBackHome()">Ya</button>
+          <button class="modal-btn btn-cancel" onclick="hideBackHome()">
+            Batal
+          </button>
         </div>
       </div>
     </div>

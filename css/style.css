@@ -609,16 +609,13 @@ html {
   box-shadow: 0 10px 30px var(--shadow-dark);
   z-index: 1000;
   margin-top: 10px;
+  display: none;
+  transition: all 0.3s ease;
 }
 
 .dropdown-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px var(--shadow-primary);
-}
-
-.dropdown-content {
-  display: none;
-  transition: all 0.3s ease;
 }
 
 .dropdown.active .dropdown-content {
@@ -636,14 +633,6 @@ html {
 .dropdown-content a:hover {
   background: var(--primary-blue-lightest);
   color: var(--text-accent);
-}
-
-.dropdown-content a:first-child {
-  border-radius: 10px 10px 0 0;
-}
-
-.dropdown-content a:last-child {
-  border-radius: 0 0 10px 10px;
 }
 
 /* Modal Styles */
@@ -767,6 +756,17 @@ html {
 
   .modal-buttons {
     flex-direction: column;
+  }
+
+  .dropdown-content {
+    position: relative;
+    display: none;
+    margin-top: 10px;
+  }
+
+  .dropdown:hover .dropdown-content,
+  .dropdown.active .dropdown-content {
+    display: block;
   }
 }
 

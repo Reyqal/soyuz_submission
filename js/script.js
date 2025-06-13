@@ -38,8 +38,8 @@ hamburger.addEventListener("click", function () {
 // Close hamburbur menu when a link is clicked
 document.querySelectorAll(".nav-link").forEach((link) => {
   link.addEventListener("click", () => {
-    hamburger.classList.remove("active"); // Reset hamburger
-    navMenu.classList.remove("active"); // Reset menu
+    hamburger.classList.remove("active"); 
+    navMenu.classList.remove("active"); 
   });
 });
 
