@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saturn - Soyuz</title>
+    <link rel="icon" href="../img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/planet.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar planet-navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="../img/logo.png" alt="Soyuz Logo" class="logo" />
+          <span>Soyuz Explore</span>
+        </div>
+        <ul class="planet-nav-menu">
+          <li>
+            <button class="back-btn" onclick="showBackModal()">
+              ← Kembali
+            </button>
+          </li>
+          <li class="dropdown">
+            <button class="dropdown-btn">Jelajahi Planet Lain ▼</button>
+            <div class="dropdown-content">
+              <a href="merkurius.html">Merkurius</a>
+              <a href="venus.html">Venus</a>
+              <a href="bumi.html">Bumi</a>
+              <a href="mars.html">Mars</a>
+              <a href="jupiter.html">Jupiter</a>
+              <a href="uranus.html">Uranus</a>
+              <a href="neptunus.html">Neptunus</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Planet Hero Section -->
+    <section class="planet-hero">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="planet-hero-content">
+        <div class="planet-info-main">
+          <h1>Saturnus</h1>
+          <h2>Planet dengan Cincin</h2>
+          <p>
+            Saturnus tuh hits banget karena cincin kece yang terbuat dari es
+            sama batu kecil-kecil, bikin dia jadi planet paling keren dan cantik
+            di tata surya.
+          </p>
+        </div>
+        <div class="planet-saturn-main">
+          <img
+            src="../img/saturnus.png"
+            alt="Saturnus"
+            class="planet-saturn-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Planet Details Section -->
+    <section class="planet-details">
+      <div class="container">
+        <h2>Fakta Menarik Tentang Saturnus</h2>
+        <div class="facts-grid">
+          <div class="fact-card">
+            <div class="fact-icon">💍</div>
+            <h3>Punya Cincin Cantik</h3>
+            <p>
+              Cincin Saturnus terbuat dari es sama batu kecil yang lebarnya
+              sampai 175.000 mil
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🪶</div>
+            <h3>Ringan Banget</h3>
+            <p>
+              Saturnus adalah planet dengan kepadatan terendah di tata surya
+              kita — kalau ada bak mandi sebesar itu, dia bakal mengapung !
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🌙</div>
+            <h3>Sistem Bulan</h3>
+            <p>
+              Saturnus punya setidaknya 82 bulan, termasuk Titan yang keren
+              banget—ada atmosfer tebal sama danau metana cair.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🌀</div>
+            <h3>Badai Heksagonal</h3>
+            <p>
+              Saturnus punya badai unik berbentuk segi enam di kutub utaranya,
+              sesuatu yang nggak ada di planet lain.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🌊</div>
+            <h3>Lautan Titan</h3>
+            <p>
+              Titan, yaitu bulan di Saturnus, punya danau metana sama etana yang
+              cair, bikin dia jadi bulan paling gokil dan unik.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🔭</div>
+            <h3>Penemuan Kuno</h3>
+            <p>
+              Saturnus sudah dikenal oleh peradaban kuno, tapi cincin-cincinnya
+              baru ditemukan setelah Galileo mengamatinya pada tahun 1610.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exploration Section -->
+    <section class="exploration">
+      <div class="container">
+        <h2>Riwayat Penjelajahan</h2>
+        <div class="exploration-content">
+          <div class="exploration-text">
+            <h3>Misi Cassini-Huygens</h3>
+            <p>
+              Pesawat antariksa Cassini menghabiskan 13 tahun mempelajari
+              Saturnus, cincin-cincinnya, dan bulan-bulannya, memberikan wawasan
+              luar biasa tentang sistem planet yang megah ini.
+            </p>
+
+            <h3>Misi Mendatang</h3>
+            <p>
+              Bakal ada misi baru buat ngeksplor bulan-bulan Saturnus yang
+              keren, khususnya Titan sama Enceladus, yang mungkin punya kondisi
+              cocok untuk kehidupan.
+            </p>
+          </div>
+          <div class="exploration-image">
+            <img
+              src="../img/saturn-exploration.png"
+              alt="Saturn Exploration"
+              class="exploration-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back Modal -->
+    <div id="backModal" class="modal">
+      <div class="modal-content">
+        <h3>Kembali ke beranda</h3>
+        <p>Kamu yakin ingin kembali ke beranda?</p>
+        <div class="modal-buttons">
+          <button class="modal-btn btn-yes" onclick="goBackHome()">Ya</button>
+          <button class="modal-btn btn-cancel" onclick="hideBackModal()">
+            Batal
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Soyuz. Ikutan jelajahi luar angkasa bareng kami !</p>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/planet.js"></script>
+  </body>
+</html>
