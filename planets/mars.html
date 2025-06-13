@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mars - Soyuz</title>
+    <link rel="icon" href="../img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/planet.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar planet-navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="../img/logo.png" alt="Soyuz Logo" class="logo" />
+          <span>Soyuz</span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <button class="back-btn" onclick="showBackModal()">
+              ← Kembali
+            </button>
+          </li>
+          <li class="dropdown">
+            <button class="dropdown-btn">Jelajahi Planet Lain ▼</button>
+            <div class="dropdown-content">
+              <a href="merkurius.html">Merkurius</a>
+              <a href="venus.html">Venus</a>
+              <a href="bumi.html">Bumi</a>
+              <a href="jupiter.html">Jupiter</a>
+              <a href="saturnus.html">Saturnus</a>
+              <a href="uranus.html">Uranus</a>
+              <a href="neptunus.html">Neptunus</a>
+            </div>
+          </li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Planet Hero Section -->
+    <section class="planet-hero">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="planet-hero-content">
+        <div class="planet-info-main">
+          <h1>Mars</h1>
+          <h2>Planet Merah</h2>
+          <p>
+            Mars dikenal sebagai Planet Merah karena ada zat besi yang berkarat
+            di permukaannya. Ini adalah tetangga kita yang paling sering
+            dijelajahi dan bisa jadi tempat tinggal manusia di masa depan.
+          </p>
+        </div>
+        <div class="planet-image-main">
+          <img src="../img/mars.png" alt="Mars" class="planet-main-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Planet Details Section -->
+    <section class="planet-details">
+      <div class="container">
+        <h2>Fakta Menarik Tentang Mars</h2>
+        <div class="facts-grid">
+          <div class="fact-card">
+            <div class="fact-icon">🏔️</div>
+            <h3>Olympus Mons</h3>
+            <p>
+              Mars punya gunung berapi terbesar di tata surya, namanya Olympus
+              Mons, tingginya 13,6 mil (sekitar 22 km).
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🌙</div>
+            <h3>Punya Dua Bulan</h3>
+            <p>
+              Mars punya dua bulan kecil: Phobos dan Deimos, yang diambil dari
+              nama dewa ketakutan dan kepanikan dalam mitologi Yunani.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🍂</div>
+            <h3>Perubahan Musim</h3>
+            <p>
+              Mars punya musim kayak di Bumi karena porosnya miring, tapi
+              durasinya dua kali lebih lama.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">💧</div>
+            <h3>Air Jaman Dulu</h3>
+            <p>
+              Katanya sih dulu banget, miliaran tahun lalu, Mars pernah punya
+              air yang ngalir di permukaannya.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">⏰</div>
+            <h3>Harinya Mirip Bumi</h3>
+            <p>
+              Satu hari di Mars itu sekitar 24 jam 37 menit, hampir sama kayak
+              panjang hari di Bumi.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🚀</div>
+            <h3>Rumah Masa Depan</h3>
+            <p>
+              Mars dianggap sebagai kandidat paling mungkin untuk jadi tempat
+              tinggal manusia di tata surya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exploration Section -->
+    <section class="exploration">
+      <div class="container">
+        <h2>Riwayat Penjelajahan</h2>
+        <div class="exploration-content">
+          <div class="exploration-text">
+            <h3>Penjelajah Robotik</h3>
+            <p>
+              Mars udah dijelajahi banyak rover kayak Spirit, Opportunity,
+              Curiosity, dan Perseverance. Mereka semua bikin penemuan keren
+              soal masa lalu dan kondisi Mars sekarang.
+            </p>
+
+            <h3>Misi Mendatang</h3>
+            <p>
+              Banyak badan antariksa di seluruh dunia lagi serius nyiapin misi
+              manusia ke Mars, dengan tujuan bikin tempat tinggal permanen di
+              Planet Merah.
+            </p>
+          </div>
+          <div class="exploration-image">
+            <img
+              src="../img/mars-rover.png"
+              alt="Mars Rover"
+              class="exploration-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back Modal -->
+    <div id="backModal" class="modal">
+      <div class="modal-content">
+        <h3>Kembali ke beranda</h3>
+        <p>Kamu yakin ingin kembali ke beranda?</p>
+        <div class="modal-buttons">
+          <button class="modal-btn btn-yes" onclick="goBackHome()">Ya</button>
+          <button class="modal-btn btn-cancel" onclick="hideBackModal()">
+            Batal
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Soyuz. Ikutan jelajahi luar angkasa bareng kami !</p>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/planet.js"></script>
+  </body>
+</html>

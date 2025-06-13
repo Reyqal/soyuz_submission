@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neptune - Soyuz</title>
+    <link rel="icon" href="../img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/planet.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar planet-navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="../img/logo.png" alt="Soyuz Logo" class="logo" />
+          <span>Soyuz</span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <button class="back-btn" onclick="showBackModal()">
+              ← Kembali
+            </button>
+          </li>
+          <li class="dropdown">
+            <button class="dropdown-btn">Jelajahi Planet Lain ▼</button>
+            <div class="dropdown-content">
+              <a href="merkurius.html">Merkurius</a>
+              <a href="venus.html">Venus</a>
+              <a href="bumi.html">Bumi</a>
+              <a href="mars.html">Mars</a>
+              <a href="jupiter.html">Jupiter</a>
+              <a href="saturnus.html">Saturnus</a>
+              <a href="uranus.html">Uranus</a>
+            </div>
+          </li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Planet Hero Section -->
+    <section class="planet-hero">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="planet-hero-content">
+        <div class="planet-info-main">
+          <h1>Neptunus</h1>
+          <h2>Planet dengan Angin Kencang</h2>
+          <p>
+            Neptunus adalah planet yang anginnya tuh kenceng banget sampe 1.200
+            mph di langit biru gelapnya.
+          </p>
+        </div>
+        <div class="planet-image-main">
+          <img
+            src="../img/neptunus.png"
+            alt="Neptunus"
+            class="planet-main-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Planet Details Section -->
+    <section class="planet-details">
+      <div class="container">
+        <h2>Fakta Menarik Tentang Neptunus</h2>
+        <div class="facts-grid">
+          <div class="fact-card">
+            <div class="fact-icon">💨</div>
+            <h3>Angin Supersonik</h3>
+            <p>
+              Neptunus punya angin tercepat di tata surya, sampai 1.200 mph,
+              lebih cepat dari kecepatan suara.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🌌</div>
+            <h3>Planet Terjauh</h3>
+            <p>
+              Neptunus tuh planet paling jauh dari Matahari, muter sekali aja
+              butuh 165 tahun Bumi.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🌙</div>
+            <h3>Bulan Triton</h3>
+            <p>
+              Triton, bulan terbesar Neptunus, berputar kebalik dan kemungkinan
+              besar adalah benda yang tertangkap dari Sabuk Kuiper.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">📏</div>
+            <h3>Mirip Uranus</h3>
+            <p>
+              Neptunus ukurannya empat kali Bumi dan komposisinya mirip sama
+              Uranus, sama-sama raksasa es.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🔵</div>
+            <h3>Warna Biru Tua</h3>
+            <p>
+              Neptunus punya warna biru tua keren karena metana di udaranya
+              nyerap cahaya merah terus mantulin warna biru.
+            </p>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🧮</div>
+            <h3>Penemuan Lewat Matematika</h3>
+            <p>
+              Neptunus adalah planet pertama yang ditemukan lewat perhitungan
+              matematika, bukan pengamatan biasa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exploration Section -->
+    <section class="exploration">
+      <div class="container">
+        <h2>Riwayat Penjelajahan</h2>
+        <div class="exploration-content">
+          <div class="exploration-text">
+            <h3>Kunjungan Voyager 2</h3>
+            <p>
+              Sama seperti Uranus, Neptunus cuma pernah dikunjungi Voyager 2
+              pada tahun 1989. Dari sanalah kita dapat foto dekat dan data
+              detail satu-satunya tentang planet jauh ini.
+            </p>
+
+            <h3>Misi Mendatang</h3>
+            <p>
+              Misi ke Neptunus di masa depan bakal butuh waktu puluhan tahun
+              perjalanan, bikin planet ini jadi salah satu yang paling sulit
+              dijelajahi di tata surya.
+            </p>
+          </div>
+          <div class="exploration-image">
+            <img
+              src="../img/neptune-exploration.png"
+              alt="Neptune Exploration"
+              class="exploration-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back Modal -->
+    <div id="backModal" class="modal">
+      <div class="modal-content">
+        <h3>Kembali ke beranda</h3>
+        <p>Kamu yakin ingin kembali ke beranda?</p>
+        <div class="modal-buttons">
+          <button class="modal-btn btn-yes" onclick="goBackHome()">Ya</button>
+          <button class="modal-btn btn-cancel" onclick="hideBackModal()">
+            Batal
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Soyuz. Ikutan jelajahi luar angkasa bareng kami !</p>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/planet.js"></script>
+  </body>
+</html>
