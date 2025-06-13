@@ -53,6 +53,7 @@
 }
 
 .planet-saturn-main {
+  display: inline-block;
   width: 100%;
   max-width: 400px;
   height: 400px;
@@ -63,8 +64,10 @@
 }
 .planet-saturn-img {
   width: 100%;
+  height: 100%;
   max-width: 400px;
   height: 400px;
+  object-fit: cover;
   animation: float 6s ease-in-out infinite;
 }
 
@@ -175,11 +178,19 @@
 
 .exploration-img {
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
   height: auto;
+  border: 3px solid var(--border-primary);
   border-radius: 15px;
-  border: 2px solid var(--border-primary);
-  box-shadow: 0 10px 30px var(--shadow-primary);
+  box-shadow: 0 10px 30px var(--primary-blue-lightest);
+  transition: all 0.3s ease;
+}
+
+.exploration-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px var(--shadow-hover);
+  transition: all 0.3s ease-in-out;
+  border-color: var(--border-active);
 }
 
 /* Responsive Design for Planet Pages */
@@ -204,6 +215,11 @@
   }
 
   .planet-saturn-main {
+    max-width: 300px;
+    height: 300px;
+  }
+
+  .planet-saturn-img {
     max-width: 300px;
     height: 300px;
   }
@@ -235,6 +251,11 @@
   }
 
   .planet-main-img {
+    max-width: 250px;
+    height: 250px;
+  }
+
+  .planet-saturn-img {
     max-width: 250px;
     height: 250px;
   }
