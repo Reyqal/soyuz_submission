@@ -215,6 +215,7 @@
   }
 
   .planet-saturn-main {
+    display: inline-block;
     max-width: 300px;
     height: 300px;
   }
@@ -251,9 +252,16 @@
   }
 
   .planet-main-img {
+    max-width: 200px;
+    height: 250px;
+  }
+
+  .planet-saturn-main {
+    display: inline-block;
     max-width: 250px;
     height: 250px;
   }
+
 
   .planet-saturn-img {
     max-width: 250px;
